@@ -1,0 +1,970 @@
+#roojai-img, .details .featured-column, .quote-bubble {
+	background-repeat: no-repeat
+}
+
+body {
+	color: #4b4b4b;
+	font-family: th-description;
+}
+
+li {
+	list-style: none;
+}
+
+.featured-column h2, .featured-column h5, a {
+	font-family: th-title
+}
+
+.content h1:first-of-type {
+	display: none
+}
+
+.featured-column {
+	background-position: right center;
+	padding-right: 100px !important
+}
+
+.featured-column h2 {
+	color: #003b70;
+	font-size: 22px;
+	font-weight: 700
+}
+
+.featured-column h5 {
+	color: #ff5011;
+	font-size: 16px
+}
+
+.en-title {
+	font-family: en-title
+}
+
+.en-description {
+	font-family: en-description
+}
+
+.th-title {
+	font-family: th-title
+}
+
+.th-description {
+	font-family: th-description
+}
+
+.btn-select-car, .header-contact, .select-car .title {
+	font-family: th-title
+}
+
+.right-border {
+	border-right: 1px solid #d3d3d3
+}
+
+.select-car {
+	background-color: #333;
+	box-shadow: 0 0 10px 3px #fff;
+	margin-left: 55px;
+	padding: 10px;
+	width: 315px
+}
+
+.select-car .title {
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px
+}
+
+.select-car .icon-car {
+	text-align: center;
+	float: left;
+	width: 20%
+}
+
+.select-car .icon-car .carmake {
+	width: 45px;
+	height: 50px;
+	background-repeat: no-repeat;
+	border: none;
+	background-color: #fff;
+	border: 2px solid rgba(255, 255, 255, .1);
+	border-radius: 7px;
+	transition: all .1s linear
+}
+
+.select-car .icon-car .carmake:hover {
+	background-color: #ff5011
+}
+
+.select-car .icon-car .toyota {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_toyota.png)
+}
+
+.select-car .icon-car .toyota:hover {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_toyota_hover.png)
+}
+
+.select-car .icon-car .izusu {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_isuzu.png)
+}
+
+.select-car .icon-car .izusu:hover {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_isuzu_hover.png)
+}
+
+.select-car .icon-car .honda {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_honda.png)
+}
+
+.select-car .icon-car .honda:hover {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_honda_hover.png)
+}
+
+.select-car .icon-car .mitsubishi {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_mitsubishi.png)
+}
+
+.select-car .icon-car .mitsubishi:hover {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_mitsubishi_hover.png)
+}
+
+.select-car .icon-car .nissan {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_nissan.png)
+}
+
+.select-car .icon-car .nissan:hover {
+	background-image:
+		url(https://cdn.roojai.com/public/common/iconcar_nissan_hover.png)
+}
+
+.select-car .select-car-brands, .select-model, .select-year {
+	margin: 5px 0
+}
+
+.select-car .dropdown-menu {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 230px
+}
+
+.select-car .models-dropdown {
+	padding-left: 0
+}
+
+.select-car button {
+	font-size: 14px;
+	width: 100%
+}
+
+.select-car .arrow-down {
+	position: absolute;
+	right: 4px;
+	top: 16px
+}
+
+.select-car .out-button {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 20px
+}
+
+.select-car .out-button input {
+	padding: 8px 50px;
+	font-size: 16px;
+	font-family: th-title
+}
+
+.btn-select-car-icon {
+	font-size: 1.5em
+}
+
+img.header-kangaroo {
+	height: 500px;
+	position: absolute;
+	top: 50px
+}
+
+.header-contact {
+	color: #fff;
+	float: right;
+	margin-top: 40px
+}
+
+.header-contact .left-border-white {
+	border-left: 1px solid #ff5011;
+	font-size: 30px;
+	line-height: 24px;
+	padding-left: 10px
+}
+
+.header-contact .left-border-white p.bold {
+	font-weight: 700;
+	text-shadow: 0 0 3px #fff
+}
+
+.header-contact a {
+	box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5)
+}
+
+.header-contact .phone {
+	font-size: 22px;
+	margin-top: 0;
+	margin-bottom: 5px
+}
+
+.header-contact .rjheadhome {
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.header-contact .phone .phone-icon {
+	font-size: 16px
+}
+
+.header-contact .small-print {
+	font-size: 13px
+}
+
+.quote-bubble, .services .title {
+	color: #003b70;
+	font-size: 18px;
+	font-family: th-title;
+	font-weight: 700
+}
+
+.details .featured-column {
+	background-position: 95% center;
+	background-size: auto 80px
+}
+
+.details .featured-column.first {
+	background-position: 95% 40%;
+	background-size: auto 100px
+}
+
+.details .featured-column.last {
+	background-position: 110% center
+}
+
+.details a.link {
+	bottom: 0;
+	display: block;
+	margin-top: 20px;
+	position: absolute;
+	width: 100px
+}
+
+@media only screen and (max-width:992px) {
+	.details .wpb_column:nth-child(1) .featured-column {
+		background-image:
+			url(https://cdn.roojai.com/public/common/home_who_s1.jpg) !important
+	}
+	.details .wpb_column:nth-child(2) .featured-column {
+		background-image:
+			url(https://cdn.roojai.com/public/common/home_who_s2.jpg) !important
+	}
+	.details .wpb_column:nth-child(3) .featured-column {
+		background-image:
+			url(https://cdn.roojai.com/public/common/home_who_s3.jpg) !important
+	}
+}
+
+.quote-bubble {
+	overflow: hidden;
+	padding: 20px 20px 20px 70px;
+	background-image:
+		url(https://cdn.roojai.com/public/common/home_border.jpg);
+	background-position: left;
+	background-size: 100% 100%
+}
+
+#roojai-img, .how-to-buy .featured-column {
+	background-position: right center
+}
+
+.quote-bubble .link {
+	text-align: right
+}
+
+.howtobuy_article_header_ball-inner, .services .content, .services .image,
+	.services .image-timer, .slider_content, .slider_image,
+	.special_promotion-plus {
+	text-align: center
+}
+
+.services .image img {
+	height: 160px;
+	margin-top: 30px
+}
+
+.services .image-timer img {
+	height: 180px
+}
+
+.services .title {
+	margin: 22px 0 3px
+}
+
+.conditions, .how-to-buy .description {
+	font-size: 12px
+}
+
+.how-to-buy .link {
+	color: #ff5011 !important;
+	text-decoration: underline !important
+}
+
+.how-to-buy ul {
+	list-style-type: none;
+	margin: 5px 0 20px;
+	padding: 0
+}
+
+.howtobuy_col {
+	width: 32%;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: .5%;
+	margin-right: .5%
+}
+
+.howtobuy_content {
+	min-height: 150px;
+	position: relative;
+	padding-bottom: 50px
+}
+
+.howtobuy_content-description ul {
+	list-style-type: none;
+	padding: 0 0 0 10px !important
+}
+
+.howtobuy_content a.link-button {
+	bottom: 0;
+	left: 0;
+	position: absolute
+}
+
+.howtobuy_content a.link {
+	color: #ff5811;
+	text-decoration: underline
+}
+
+.howtobuy_content .howtobuy_content-subheader {
+	font-size: 1.25em;
+	font-family: th-title;
+	color: #ff5811
+}
+
+.howtobuy_content .howtobuy_content-header {
+	font-size: 2em;
+	font-family: th-title;
+	font-weight: 700;
+	color: #003b70
+}
+
+.howtobuy_content .howtobuy_content-description {
+	padding-right: 80px
+}
+
+.howtobuy_content .howtobuy_content-bg {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1
+}
+
+.howtobuy_content .howtobuy_content-bg img {
+	width: 80px
+}
+
+.howtobuy_col:last-child .howtobuy_content-bg img {
+	width: 120px
+}
+
+.howtobuy_article_header_ball-outer {
+	background-color: #003b70;
+	width: 75px;
+	padding: 5px;
+	border-radius: 50px;
+	margin: 0 auto 25px
+}
+
+.howtobuy_article_header_ball-inner {
+	border: 2px solid #ff5011;
+	padding: 5px;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 2.5em
+}
+
+.howtobuy_article-next {
+	position: absolute;
+	right: -10%;
+	top: 10px
+}
+
+.howtobuy_article-next i {
+	font-size: 3em;
+	word-spacing: -20px
+}
+
+#how-to-buy-row {
+	margin-bottom: 0
+}
+
+.payment-type {
+	min-height: 370px;
+	position: relative
+}
+
+.payment-type .title {
+	color: #003b70;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: th-title
+}
+
+.payment-type .description {
+	margin: 10px 0
+}
+
+.payment-type .description .warning {
+	background-color: #ccc;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	margin: 10px 0 0;
+	padding: 10px 8px
+}
+
+.payment-type img.bottom {
+	position: absolute;
+	bottom: 0
+}
+
+.roojai-img .featured-column {
+	background-position-y: -20px
+}
+
+.featured-column {
+	min-height: 180px
+}
+
+.featured-column.first h5 {
+	padding-top: 0
+}
+
+.featured-column.first {
+	background-size: 30%
+}
+
+.services .image {
+	width: 160px;
+	margin: 0 auto
+}
+
+.services .image .yit-image {
+	width: 160px;
+	height: 160px
+}
+
+.services .conditions a {
+	font-family: th-description
+}
+
+.blog.cat-name, .offer-text, .special_promotion-wrapper h4 {
+	font-family: th-title
+}
+
+#roojai-img {
+	width: 100px;
+	height: 80px;
+	background-image:
+		url(https://cdn.roojai.com/public/common/home_talk.jpg);
+	background-size: contain
+}
+
+.header-kangaroo-frame {
+	width: 350px;
+	overflow: hidden;
+	position: absolute;
+	right: -350px;
+	bottom: 0;
+}
+
+.header-kangaroo-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 999;
+	top: -3px;
+}
+
+.header-kangaroo-quote-frame {
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	right: -10%
+}
+
+.header-kangaroo-quote-frame img {
+	width: 200px
+}
+
+.warning {
+	background-color: rgba(0, 59, 112, .5);
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 10px
+}
+
+.road-24 {
+	color: #003b70
+}
+
+.road-24:hover {
+	color: #ff5811
+}
+
+#parallax-slider .upb_row_bg {
+	background-size: auto 130% !important
+}
+
+@media only screen and (max-width:480px) {
+	.details .featured-column {
+		min-height: 225px !important
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.right-border {
+		border-right: none
+	}
+	.details .featured-column {
+		min-height: 200px
+	}
+	.howtobuy_col {
+		width: 100%;
+		margin-bottom: 50px
+	}
+	.howtobuy_content {
+		height: 325px
+	}
+	.select-car {
+		width: auto
+	}
+	.featured-column {
+		background-image: url() !important
+	}
+	#parallax-slider .upb_row_bg {
+		background-color: #003b70 !important;
+		background-image: none !important
+	}
+	.promotion_slider {
+		padding-bottom: 10px
+	}
+}
+
+@media only screen and (max-width:992px) {
+	.select-car {
+		margin-left: 0
+	}
+	.select-car .select-car-brands {
+		margin-bottom: 0
+	}
+	.select-car .models-dropdown {
+		padding-left: 15px
+	}
+	.header-contact {
+		margin-left: 0 !important
+	}
+	.quote-bubble {
+		margin-left: 50px
+	}
+	.featured-column {
+		padding-right: 0
+	}
+	.featured-column.first h5 {
+		padding-top: 20px
+	}
+	.header-kangaroo-frame {
+		right: -300px;
+		top: 45px;
+		z-index: 999;
+	}
+}
+
+@media ( min-width :768px) and (max-width:992px) {
+	#primary {
+		margin-top: 130px !important
+	}
+}
+
+@media ( min-width :992px) and (max-width:1200px) {
+	#primary {
+		margin-top: 155px !important
+	}
+	.quote-bubble {
+		margin-left: 50px
+	}
+	.payment-type {
+		min-height: 400px
+	}
+	.header-kangaroo-frame {
+		right: -300px;
+		top: 11px;
+		z-index: 999;
+	}
+}
+
+@media only screen and (min-width:1200px) {
+	#primary {
+		margin-top: 110px !important
+	}
+}
+
+.slider_frame .bx-wrapper {
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none
+}
+
+.slider_image {
+	margin-top: 30px
+}
+
+.slider_image img {
+	margin: 0 auto
+}
+
+.slider_image.slider_image-nomargin {
+	margin-top: 0
+}
+
+.slider_description {
+	margin-top: 10px !important;
+	font-size: 1em
+}
+
+.slider_description a {
+	color: #000;
+	font-size: .75em
+}
+
+.offer-text h3 {
+	margin-top: 5px
+}
+
+.offer-promote h4 {
+	line-height: 1.25
+}
+
+#blog-row {
+	margin-bottom: 0 !important
+}
+
+.quotation {
+	font-size: 2em
+}
+
+.special_promotion-wrapper {
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 5px;
+	padding-top: 5px;
+	float: left
+}
+
+.special_promotion-wrapper img {
+	margin: 0 auto
+}
+
+.special_promotion-wrapper .col-md-2, .special_promotion-wrapper .col-md-3,
+	.special_promotion-wrapper.col-md-12 {
+	font-family: th-title;
+	padding-left: 0;
+	padding-right: 0
+}
+
+.special_promotion-column, .special_promotion-frame.col-md-5,
+	.special_promotion-frame.col-md-6 {
+	padding-left: 5px;
+	padding-right: 0
+}
+
+.special_promotion-column {
+	margin-top: 5px;
+	border-left: 2px #fff solid
+}
+
+#special_promotion-main_row, .forced_row {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important
+}
+
+.special_promotion-plus {
+	font-size: 3em;
+	color: #fff
+}
+
+#special_promotion-main_row {
+	padding-top: 5px !important
+}
+
+.promotion_kangaroo {
+	padding-top: 10px;
+	overflow: hidden
+}
+
+.offer-text .bx-wrapper, .promotion_slider .bx-wrapper {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	background-color: transparent
+}
+
+.promotionSlider {
+	padding: 0 !important
+}
+
+img.nelioefi {
+	height: 126px;
+	width: 252px;
+	margin-bottom: 10px !important
+}
+
+a:active, a:hover {
+	text-decoration: none
+}
+
+.blog.cat-name {
+	font-weight: 700;
+	font-size: 18px
+}
+
+#blog .image {
+	position: relative
+}
+
+#blog .image-date {
+	position: absolute;
+	top: 40px;
+	background-color: #fff;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: 7px;
+	font-family: en-title;
+	-webkit-box-box-shadow: 0 0 0 #8C8C8C, -3px 0 7px #8C8C8C;
+	-moz-box-box-shadow: 0 0 0 #8C8C8C, -3px 0 7px #8C8C8C;
+	box-shadow: 0 0 0 #8C8C8C, -3px 0 7px #8C8C8C
+}
+
+#blog .image-date .day, #blog .image-date .month {
+	display: block;
+	text-align: center
+}
+
+#blog .image-date .day {
+	font-size: 20px;
+	font-weight: 700
+}
+
+#blog .content {
+	margin-top: 10px
+}
+
+#blog .title {
+	font-family: th-title;
+	padding-left: 10px
+}
+
+#blog .cat-name {
+	font-family: th-title;
+	font-weight: 700;
+	font-size: 18px
+}
+
+#blog .author, #blog .title {
+	padding-left: 10px;
+	font-size: 22px;
+	border-left: 1px solid #003B70;
+	margin: 0
+}
+
+#blog .author {
+	padding-bottom: 5px;
+	font-weight: 700
+}
+
+#blog .title {
+	font-size: 16px;
+	margin-bottom: 5px
+}
+
+#blog .description {
+	font-family: th-description;
+	padding-left: 10px;
+	font-size: 12px
+}
+
+#blog .share .tab {
+	background-color: #eee;
+	padding: 5px;
+	-webkit-border-border-bottom-left-radius: 7px;
+	-moz-border-border-bottom-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	-webkit-border-border-bottom-right-radius: 7px;
+	-moz-border-border-bottom-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	-webkit-box-shadow: inset 0 0 0 #eee, inset 0 3px 3px #D4D2D2;
+	-moz-box-shadow: inset 0 0 0 #eee, inset 0 3px 3px #D4D2D2;
+	box-shadow: inset 0 0 0 #eee, inset 0 3px 3px #D4D2D2
+}
+
+#blog .share .tab .right {
+	float: right
+}
+
+#blog .image iframe {
+	max-height: 143px
+}
+
+.services .content, .service .content a {
+	color: black;
+	font-family: th-description;
+}
+
+.bx-wrapper {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+.mobile-clone {
+	display: none;
+}
+
+#facebookSliderWrapper {
+	overflow: hidden;
+}
+
+#facebookSliderWrapper .bx-viewport {
+	height: 220px !important;
+}
+
+@media screen and (max-width: 768px) {
+	.mobile-clone {
+		display: block;
+	}
+	#logo {
+		float: none;
+		display: inline-block !important;
+	}
+	#facebookSliderWrapper {
+		display: block;
+	}
+}
+
+.rj-badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	color: #FF5011;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #FFF;
+	border-radius: 10px;
+}
+
+.promotion_quote {
+	display: none;
+}
+
+.promotionSlider {
+	display: none;
+}
+
+.btn i.caret.arrow-down {
+	margin-right: 0;
+}
+
+#special_promotion-main_row {
+	box-shadow: 0px -1px 1px rgb(197, 199, 201);
+}
+
+.vc_custom_1476412035926 {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	background-color: #333333 !important;
+}
+
+.vc_custom_1476412122163 {
+	margin-top: 70px !important;
+	margin-bottom: 10px !important;
+}
+
+.vc_custom_1461168279291 {
+	margin-top: 20px !important;
+	margin-bottom: 0px !important;
+}
+
+.vc_custom_1461167860066 {
+	margin-top: 20px !important;
+	margin-bottom: 5px !important;
+}
+
+.vc_custom_1453806473929 {
+	margin-top: 20px !important;
+}
+
+.vc_custom_1448958849242 {
+	margin-top: 70px !important;
+	margin-bottom: 10px !important;
+}
+
+.vc_custom_1448958897188 {
+	margin-top: 80px !important;
+	margin-bottom: 20px !important;
+}
+
+.vc_custom_1448958849242 {
+	margin-top: 70px !important;
+	margin-bottom: 10px !important;
+}
+
+.vc_custom_1461213800265 {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.vc_custom_1465815538598 {
+	margin-bottom: 0px !important;
+}
+
+.vc_custom_1465903935578 {
+	border-bottom-width: 0px !important;
+}

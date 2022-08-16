@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions name="DpoService"
+	targetNamespace="http://towerswatson.com/rto/dpo/services/2010/01"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+	xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+	xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+	xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://towerswatson.com/rto/dpo/services/2010/01"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+	<wsp:Policy wsu:Id="DefaultDpoServiceEndpoint_policy">
+		<wsp:ExactlyOne>
+			<wsp:All>
+				<wsaw:UsingAddressing />
+			</wsp:All>
+		</wsp:ExactlyOne>
+	</wsp:Policy>
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://towerswatson.com/rto/dpo/services/2010/01/Imports">
+			<xsd:import schemaLocation="http://sin-dpo-mb.uat-roojai.com:1377/DpoService.svc?xsd=xsd0"
+				namespace="http://towerswatson.com/rto/dpo/services/2010/01" />
+			<xsd:import schemaLocation="http://sin-dpo-mb.uat-roojai.com:1377/DpoService.svc?xsd=xsd3"
+				namespace="http://towerswatson.com/rto/dpo/types/2010/01" />
+			<xsd:import schemaLocation="http://sin-dpo-mb.uat-roojai.com:1377/DpoService.svc?xsd=xsd1"
+				namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+			<xsd:import schemaLocation="http://sin-dpo-mb.uat-roojai.com:1377/DpoService.svc?xsd=xsd2"
+				namespace="http://towerswatson.com/rto/smf/types/2010/01" />
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="PofRequest">
+		<wsdl:part name="parameters" element="tns:PofRequest" />
+	</wsdl:message>
+	<wsdl:message name="PofResponse">
+		<wsdl:part name="parameters" element="tns:PofResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="DpoService_GetPof_ConfigurationFaultContractFault_FaultMessage">
+		<wsdl:part name="detail" element="q1:ConfigurationFaultContract"
+			xmlns:q1="http://towerswatson.com/rto/dpo/types/2010/01" />
+	</wsdl:message>
+	<wsdl:message name="DpoService_GetPof_SevereFaultContractFault_FaultMessage">
+		<wsdl:part name="detail" element="q2:SevereFaultContract"
+			xmlns:q2="http://towerswatson.com/rto/dpo/types/2010/01" />
+	</wsdl:message>
+	<wsdl:message name="PofRequestUsingMasterSet">
+		<wsdl:part name="parameters" element="tns:PofRequestUsingMasterSet" />
+	</wsdl:message>
+	<wsdl:message name="PofResponse2">
+		<wsdl:part name="parameters" element="tns:PofResponse2" />
+	</wsdl:message>
+	<wsdl:message
+		name="DpoService_GetPofWithId_ConfigurationFaultContractFault_FaultMessage">
+		<wsdl:part name="detail" element="q3:ConfigurationFaultContract"
+			xmlns:q3="http://towerswatson.com/rto/dpo/types/2010/01" />
+	</wsdl:message>
+	<wsdl:message
+		name="DpoService_GetPofWithId_SevereFaultContractFault_FaultMessage">
+		<wsdl:part name="detail" element="q4:SevereFaultContract"
+			xmlns:q4="http://towerswatson.com/rto/dpo/types/2010/01" />
+	</wsdl:message>
+	<wsdl:message name="PofRequestUsingKey">
+		<wsdl:part name="parameters" element="tns:PofRequestUsingKey" />
+	</wsdl:message>
+	<wsdl:message
+		name="DpoService_GetPofWithKey_ConfigurationFaultContractFault_FaultMessage">
+		<wsdl:part name="detail" element="q5:ConfigurationFaultContract"
+			xmlns:q5="http://towerswatson.com/rto/dpo/types/2010/01" />
+	</wsdl:message>
+	<wsdl:message
+		name="DpoService_GetPofWithKey_SevereFaultContractFault_FaultMessage">
+		<wsdl:part name="detail" element="q6:SevereFaultContract"
+			xmlns:q6="http://towerswatson.com/rto/dpo/types/2010/01" />
+	</wsdl:message>
+	<wsdl:portType name="DpoService">
+		<wsdl:operation name="GetPof">
+			<wsdl:input
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPof"
+				name="PofRequest" message="tns:PofRequest" />
+			<wsdl:output
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofResponse"
+				name="PofResponse" message="tns:PofResponse" />
+			<wsdl:fault
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofConfigurationFaultContractFault"
+				name="ConfigurationFaultContractFault"
+				message="tns:DpoService_GetPof_ConfigurationFaultContractFault_FaultMessage" />
+			<wsdl:fault
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofSevereFaultContractFault"
+				name="SevereFaultContractFault" message="tns:DpoService_GetPof_SevereFaultContractFault_FaultMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="GetPofWithId">
+			<wsdl:input
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPofWithId"
+				name="PofRequestUsingMasterSet" message="tns:PofRequestUsingMasterSet" />
+			<wsdl:output
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofWithIdResponse"
+				name="PofResponse2" message="tns:PofResponse2" />
+			<wsdl:fault
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofWithIdConfigurationFaultContractFault"
+				name="ConfigurationFaultContractFault"
+				message="tns:DpoService_GetPofWithId_ConfigurationFaultContractFault_FaultMessage" />
+			<wsdl:fault
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofWithIdSevereFaultContractFault"
+				name="SevereFaultContractFault"
+				message="tns:DpoService_GetPofWithId_SevereFaultContractFault_FaultMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="GetPofWithKey">
+			<wsdl:input
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPofWithKey"
+				name="PofRequestUsingKey" message="tns:PofRequestUsingKey" />
+			<wsdl:output
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofWithKeyResponse"
+				name="PofResponse2" message="tns:PofResponse2" />
+			<wsdl:fault
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofWithKeyConfigurationFaultContractFault"
+				name="ConfigurationFaultContractFault"
+				message="tns:DpoService_GetPofWithKey_ConfigurationFaultContractFault_FaultMessage" />
+			<wsdl:fault
+				wsaw:Action="http://towerswatson.com/rto/dpo/services/2010/01/DpoService/GetPofWithKeySevereFaultContractFault"
+				name="SevereFaultContractFault"
+				message="tns:DpoService_GetPofWithKey_SevereFaultContractFault_FaultMessage" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="DefaultDpoServiceEndpoint" type="tns:DpoService">
+		<wsp:PolicyReference URI="#DefaultDpoServiceEndpoint_policy" />
+		<soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="GetPof">
+			<soap12:operation
+				soapAction="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPof"
+				style="document" />
+			<wsdl:input name="PofRequest">
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="PofResponse">
+				<soap12:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="ConfigurationFaultContractFault">
+				<soap12:fault name="ConfigurationFaultContractFault"
+					use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="SevereFaultContractFault">
+				<soap12:fault name="SevereFaultContractFault" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetPofWithId">
+			<soap12:operation
+				soapAction="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPofWithId"
+				style="document" />
+			<wsdl:input name="PofRequestUsingMasterSet">
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="PofResponse2">
+				<soap12:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="ConfigurationFaultContractFault">
+				<soap12:fault name="ConfigurationFaultContractFault"
+					use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="SevereFaultContractFault">
+				<soap12:fault name="SevereFaultContractFault" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetPofWithKey">
+			<soap12:operation
+				soapAction="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPofWithKey"
+				style="document" />
+			<wsdl:input name="PofRequestUsingKey">
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="PofResponse2">
+				<soap12:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="ConfigurationFaultContractFault">
+				<soap12:fault name="ConfigurationFaultContractFault"
+					use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="SevereFaultContractFault">
+				<soap12:fault name="SevereFaultContractFault" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="DefaultDpoServiceEndpoint1" type="tns:DpoService">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="GetPof">
+			<soap:operation
+				soapAction="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPof"
+				style="document" />
+			<wsdl:input name="PofRequest">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="PofResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="ConfigurationFaultContractFault">
+				<soap:fault name="ConfigurationFaultContractFault" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="SevereFaultContractFault">
+				<soap:fault name="SevereFaultContractFault" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetPofWithId">
+			<soap:operation
+				soapAction="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPofWithId"
+				style="document" />
+			<wsdl:input name="PofRequestUsingMasterSet">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="PofResponse2">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="ConfigurationFaultContractFault">
+				<soap:fault name="ConfigurationFaultContractFault" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="SevereFaultContractFault">
+				<soap:fault name="SevereFaultContractFault" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetPofWithKey">
+			<soap:operation
+				soapAction="http://towerswatson.com/rto/dpo/services/2010/01/DpoServiceContract/GetPofWithKey"
+				style="document" />
+			<wsdl:input name="PofRequestUsingKey">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="PofResponse2">
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="ConfigurationFaultContractFault">
+				<soap:fault name="ConfigurationFaultContractFault" use="literal" />
+			</wsdl:fault>
+			<wsdl:fault name="SevereFaultContractFault">
+				<soap:fault name="SevereFaultContractFault" use="literal" />
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="DpoService">
+		<wsdl:port name="DefaultDpoServiceEndpoint" binding="tns:DefaultDpoServiceEndpoint">
+			<soap12:address location="http://sin-dpo-mb.uat-roojai.com:1377/DpoService.svc" />
+			<wsa10:EndpointReference>
+				<wsa10:Address>http://sin-dpo-mb.uat-roojai.com:1377/DpoService.svc
+				</wsa10:Address>
+			</wsa10:EndpointReference>
+		</wsdl:port>
+		<wsdl:port name="DefaultDpoServiceEndpoint1" binding="tns:DefaultDpoServiceEndpoint1">
+			<soap:address location="http://sin-dpo-mb.uat-roojai.com:1377/DpoService.svc/soap11" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
