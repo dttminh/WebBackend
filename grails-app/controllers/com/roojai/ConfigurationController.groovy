@@ -57,8 +57,8 @@ class ConfigurationController {
                         jsonResponse.put("omisePublicKey", systemconfigurationService.getOmisePublicKey())
                     }else if(q == "productPage"){
                         jsonResponse.put("productPage", systemconfigurationService.getValueByCategory("productPage"))
-                    }else if(q == "AABroker"){
-                        jsonResponse.put("AABroker", systemconfigurationService.getValueByCategory("AABroker"))
+                    }else if(q == "partnerRefuseModal"){
+                        jsonResponse.put("partnerRefuseModal", systemconfigurationService.getValueByCategory("partnerRefuseModal"))
                     }
 
                 }
